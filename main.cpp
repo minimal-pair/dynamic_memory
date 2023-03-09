@@ -6,7 +6,7 @@
 //
 
 #include <iostream>
-#include <vector>
+
 using namespace std;
 
 int* int_p_array {nullptr};
@@ -19,7 +19,7 @@ void add(int n) {
     }
 }
 
-void exe() {
+int main() {
     add(1);
     add(2);
     add(3);
@@ -28,9 +28,4 @@ void exe() {
     for (int i = 0; i < 4; i++) {
         cout << *int_p_array + i << endl;
     }
-}
-
-int main() {
-    exe();
-    
 }
